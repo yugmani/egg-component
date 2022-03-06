@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function SayHello({ firstName, lastName }) {
   return (
@@ -8,21 +9,23 @@ function SayHello({ firstName, lastName }) {
   );
 }
 
-const PropTypes = {
-  string(props, propName, componentName) {
-    if (typeof props[propName] !== 'string') {
-      return new Error(
-        `Hey, the component ${componentName} needs the prop ${propName} to be a string, but you passed a ${typeof props[
-          propName
-        ]}`
-      );
-    }
-  },
-};
+// const PropTypes = {
+//   string(props, propName, componentName) {
+//     if (typeof props[propName] !== 'string') {
+//       return new Error(
+//         `Hey, the component ${componentName} needs the prop ${propName} to be a string, but you passed a ${typeof props[
+//           propName
+//         ]}`
+//       );
+//     }
+//   },
+// };
 
 SayHello.propTypes = {
-  firstName: PropTypes.string,
-  lastName: PropTypes.string,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
 };
+
+//
 
 export default SayHello;

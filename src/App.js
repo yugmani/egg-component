@@ -9,7 +9,7 @@ export default function App() {
     <div className="container">
       <Message text="Hello World" />
       {Message({ text: 'Goodbye World!' })}
-      <SayHello firstName={true} lastName={false} />
+      <SayHello firstName="Yoog" lastName={false} />
     </div>
   );
 }
