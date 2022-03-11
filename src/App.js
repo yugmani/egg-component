@@ -10,7 +10,7 @@ export default function App() {
     <div className="container">
       <Message text="Hello World" />
       {Message({ text: 'Goodbye World!' })}
-      <SayHello firstName="Yoog" lastName={false} />
+      <SayHello firstName="Yoog" />
     </div>
   );
 }
@@ -21,4 +21,3 @@ const message = {
   padding: '10px',
   backgroundColor: 'whitesmoke',
 };
-
