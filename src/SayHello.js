@@ -26,6 +26,9 @@ SayHello.propTypes = {
   lastName: PropTypes.string.isRequired,
 };
 
-//
-
 export default SayHello;
+
+// Errpr Message in the console.
+// Warning: Failed prop type: Invalid prop `lastName` of type `boolean` supplied to `SayHello`, expected `string`.
+// at SayHello (https://react-rhzxnr.stackblitz.io/~/src/SayHello.js:8:21)
+// at App

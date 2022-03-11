@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import SayHello from './SayHello';
+import PropTypes from 'prop-types';
 
 export default function App() {
   const Message = (props) => <div style={message}>{props.text}</div>;
@@ -20,3 +21,4 @@ const message = {
   padding: '10px',
   backgroundColor: 'whitesmoke',
 };
+
